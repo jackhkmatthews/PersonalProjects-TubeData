@@ -1,0 +1,28 @@
+{
+  "name": "personalprojects-tubedatavisualiser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackhkmatthews/PersonalProjects-TubeDataVisualiser.git"
+  },
+  "author": "Jack Matthews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackhkmatthews/PersonalProjects-TubeDataVisualiser/issues"
+  },
+  "homepage": "https://github.com/jackhkmatthews/PersonalProjects-TubeDataVisualiser#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "angular-touch": "^1.5.8",
+    "angular-ui-bootstrap": "^2.2.0",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0"
+  }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="tubeDataVisualiserApp">
+  <head>
+    <script src="vendor/angular.js"></script>
+    <script src="vendor/angular-animate.js"></script>
+    <script src="vendor/angular-sanitize.js"></script>
+    <script src="vendor/ui-bootstrap-tpls-2.2.0.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/ButtonsCtrl.js"></script>
+    <script src="scripts/controllers/CollapseDemoCtrl.js"></script>
+    <script src="scripts/controllers/mainCtrl.js"></script>
+    <link href="vendor/bootstrap.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <tube-visualiser></tube-visualiser> -->
+    <div class="app-container" ng-controller="mainCtrl" ng-style="appContainerNgStyleSyntax">
+    <div ng-controller="CollapseDemoCtrl">
+      <hr>
+      <button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">TUBE DATA</button>
+      <div uib-collapse="isCollapsed">
+          <div class="well well-lg data-canvas" ng-style="dataCanvasNgStyleSyntax">
+            <h1>Visuals</h1>
+          </div>
+          <button type="button" class="btn btn-default" ng-click="isCollapsed2 = !isCollapsed2">OPTIONS</button>
+          <div uib-collapse="isCollapsed2">
+            <div class="well well-lg" ng-style="">
+            <div class="btn-group">
+              <button class="btn btn-primary update" ng-click="updateCookie()">Option 1</button>
+              <button class="btn btn-primary save" ng-click="saveCookie()">Option 2</button>
+              <button class="btn btn-primary delete" ng-click="deleteCookie()">Option 3</button>
+            </div>
+            <h1>Other options</h1>
+            <label>Canvas Width</label>
+            <input ng-model="appContainerNgStyleSyntax.width" type="text">
+            <label>Canvas Height</label>
+            <input ng-model="dataCanvasNgStyleSyntax.height" type="text">
+            </div>
+          </div>
+       </div>
+    </div>
+    </div>
+  </body>
+</html>
